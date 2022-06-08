@@ -2,7 +2,6 @@ function displayCountries() {
   fetch("https://restcountries.com/v3.1/region/europe")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const container = document.querySelector(".container");
 
       data.forEach((country) => {
